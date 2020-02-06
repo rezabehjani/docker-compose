@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sharefile:
+    build: .
+    volumes:
+    - ~/docker_file_share/file_share.txt:/docker_file_share/file_share.txt
+
+  redis:
+    image: "python_test_share"
